@@ -389,3 +389,8 @@
  .input-box input[type="date"]:focus {
      border-color: #38bdf8;
  }
+
+ .date {
+     margin-right: 50%;
+     color: #64748b;
+ }
