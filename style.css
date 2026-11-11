@@ -389,20 +389,3 @@
  .input-box input[type="date"]:focus {
      border-color: #38bdf8;
  }
-
- input[type=“date”].input-box {
-     -webkit-appearance: none !important;
-     appearance: none !important;
-     display: block !important;
-     width: 100% !important;
-     min-width: 0 !important;
-     max-width: 100% !important;
-     box-sizing: border-box !important;
-     text-align: left !important;
-     height: 56px !important;
-     /* same as your other inputs */
- }
-
- input[type=“date”].input-box::-webkit-date-and-time-value {
-     text-align: left;
- }
