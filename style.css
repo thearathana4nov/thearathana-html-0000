@@ -390,17 +390,19 @@
      border-color: #38bdf8;
  }
 
- .input-box[type=“date”] {
-     -webkit-appearance: none;
-     appearance: none;
-     display: block;
-     width: 100%;
-     min-width: 0;
-     max-width: 100%;
-     box-sizing: border-box;
-     text-align: left;
+ input[type=“date”].input-box {
+     -webkit-appearance: none !important;
+     appearance: none !important;
+     display: block !important;
+     width: 100% !important;
+     min-width: 0 !important;
+     max-width: 100% !important;
+     box-sizing: border-box !important;
+     text-align: left !important;
+     height: 56px !important;
+     /* same as your other inputs */
  }
 
- .input-box[type=“date”]::-webkit-date-and-time-value {
+ input[type=“date”].input-box::-webkit-date-and-time-value {
      text-align: left;
  }
