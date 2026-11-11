@@ -389,3 +389,283 @@
  .input-box input[type="date"]:focus {
      border-color: #38bdf8;
  }
+
+ body {
+     min-height: 100vh;
+     background: #071426;
+     color: white;
+     overflow-x: hidden;
+ }
+
+ /* Background */
+
+ .background {
+     position: fixed;
+     inset: 0;
+     overflow: hidden;
+     z-index: -1;
+ }
+
+ .glow {
+     position: absolute;
+     width: 350px;
+     height: 350px;
+     border-radius: 50%;
+     filter: blur(120px);
+     opacity: 0.35;
+ }
+
+ .glow-one {
+     background: #0284c7;
+     top: 10%;
+     left: -100px;
+ }
+
+ .glow-two {
+     background: #2563eb;
+     bottom: 0;
+     right: -100px;
+ }
+
+ /* Header */
+
+ header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 30px 8%;
+ }
+
+ .logo {
+     font-size: 27px;
+     font-weight: bold;
+     letter-spacing: 3px;
+ }
+
+ .logo span {
+     color: #38bdf8;
+ }
+
+ .back-btn {
+     color: #cbd5e1;
+     text-decoration: none;
+     border: 1px solid #334155;
+     padding: 11px 20px;
+     border-radius: 8px;
+     transition: 0.3s;
+ }
+
+ .back-btn:hover {
+     background: #0284c7;
+     color: white;
+ }
+
+ /* Main Container */
+
+ .container {
+     min-height: 78vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 30px 20px;
+ }
+
+ /* Age Card */
+
+ .age-card {
+     width: 100%;
+     max-width: 480px;
+     padding: 45px 40px;
+     background: rgba(15, 35, 60, 0.85);
+     backdrop-filter: blur(20px);
+     border: 1px solid rgba(56, 189, 248, 0.2);
+     border-radius: 22px;
+     text-align: center;
+     box-shadow: 0 20px 70px rgba(0, 0, 0, 0.4);
+     animation: appear 0.8s ease;
+ }
+
+ @keyframes appear {
+     from {
+         opacity: 0;
+         transform: translateY(25px);
+     }
+
+     to {
+         opacity: 1;
+         transform: translateY(0);
+     }
+ }
+
+ /* Icon */
+
+ .icon {
+     width: 55px;
+     height: 55px;
+     margin: 0 auto 25px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 15px;
+     background: rgba(56, 189, 248, 0.12);
+     color: #38bdf8;
+     font-size: 30px;
+ }
+
+ .small-title {
+     color: #38bdf8;
+     font-size: 11px;
+     letter-spacing: 3px;
+     font-weight: bold;
+ }
+
+ /* Heading */
+
+ h1 {
+     font-size: 34px;
+     margin: 18px 0;
+ }
+
+ h1 span {
+     color: #38bdf8;
+ }
+
+ .description {
+     color: #94a3b8;
+     font-size: 14px;
+     line-height: 1.8;
+     margin-bottom: 35px;
+ }
+
+ /* Date Input */
+
+ .form-group {
+     text-align: left;
+ }
+
+ .form-group label {
+     display: block;
+     color: #cbd5e1;
+     font-size: 12px;
+     font-weight: bold;
+     letter-spacing: 1px;
+     margin-bottom: 12px;
+ }
+
+ .form-group input {
+     width: 100%;
+     padding: 16px;
+     background: #14243a;
+     color: white;
+     border: 1px solid #334155;
+     border-radius: 10px;
+     outline: none;
+     font-size: 14px;
+     cursor: pointer;
+     transition: 0.3s;
+ }
+
+ .form-group input:focus {
+     border-color: #38bdf8;
+     box-shadow: 0 0 15px rgba(56, 189, 248, 0.15);
+ }
+
+ /* Age Display */
+
+ .age-display {
+     margin-top: 25px;
+     padding: 22px;
+     background: rgba(2, 132, 199, 0.08);
+     border: 1px solid rgba(56, 189, 248, 0.15);
+     border-radius: 13px;
+ }
+
+ .age-number {
+     font-size: 48px;
+     font-weight: bold;
+     color: #38bdf8;
+ }
+
+ .age-label {
+     font-size: 11px;
+     letter-spacing: 3px;
+     color: #94a3b8;
+     margin-top: 5px;
+ }
+
+ #message {
+     font-size: 13px;
+     margin-top: 15px;
+     color: #94a3b8;
+ }
+
+ #message.success {
+     color: #38bdf8;
+ }
+
+ #message.error {
+     color: #f87171;
+ }
+
+ /* Continue Button */
+
+ #continueBtn {
+     width: 100%;
+     padding: 16px;
+     margin-top: 25px;
+     background: linear-gradient(90deg, #0284c7, #2563eb);
+     border: none;
+     border-radius: 10px;
+     color: white;
+     font-size: 15px;
+     font-weight: bold;
+     cursor: pointer;
+     transition: 0.3s;
+ }
+
+ #continueBtn:disabled {
+     background: #334155;
+     color: #94a3b8;
+     cursor: not-allowed;
+ }
+
+ #continueBtn:not(:disabled):hover {
+     transform: translateY(-3px);
+     box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4);
+ }
+
+ /* Footer */
+
+ .footer-text {
+     margin-top: 25px;
+     color: #64748b;
+     font-size: 11px;
+ }
+
+ footer {
+     text-align: center;
+     padding: 20px;
+     color: #64748b;
+     font-size: 12px;
+ }
+
+ /* Mobile */
+
+ @media (max-width: 500px) {
+
+     header {
+         padding: 22px;
+     }
+
+     .age-card {
+         padding: 35px 23px;
+     }
+
+     h1 {
+         font-size: 28px;
+     }
+
+     .age-number {
+         font-size: 40px;
+     }
+ }

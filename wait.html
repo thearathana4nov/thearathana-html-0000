@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXUS | How Old Are You?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <video autoplay muted loop playsinline class="bg-video">
+        <source src="bg.mp4" type="video/mp4">
+    </video>
+
+    <div class="overlay"></div>
+
+    <div class="background">
+        <div class="glow glow-one"></div>
+        <div class="glow glow-two"></div>
+    </div>
+    <main class="container">
+
+        <div class="age-card">
+
+
+
+            <h1>Wait how old are <span>you?</span></h1>
+
+            <p class="description">
+                Please enter your date of birth below.
+            </p>
+
+            <div class="form-group">
+
+                <label for="birthday">Date of birth</label>
+
+                <input type="date" id="birthday" name="birthday" required style="color: #64748b;">
+
+            </div>
+            <br>
+
+            <div class="form-group">
+
+                <label for="text">Message</label>
+
+                <input type="text" id="text" placeholder="messages" name="messages" required>
+
+            </div>
+
+
+            <button class="buttton" id="continueBtn" disabled style="background-color: hsl(215, 67%, 38%);">
+                <a href="https://thearathana-html-7777.vercel.app/"
+                    style="text-decoration: none; color: antiquewhite;">Continue →</a>
+
+            </button>
+
+            <p class="footer-text">
+                Your information is important to us.
+            </p>
+
+        </div>
+
+    </main>
+    <script src="age.js"></script>
+
+</body>
+
+</html>
