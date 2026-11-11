@@ -373,3 +373,19 @@
          padding: 28px 22px;
      }
  }
+
+ .input-box input[type="date"] {
+     width: 100%;
+     padding: 14px;
+     border-radius: 9px;
+     border: 1px solid #334155;
+     outline: none;
+     background: #14243a;
+     color: white;
+     font-size: 14px;
+     cursor: pointer;
+ }
+
+ .input-box input[type="date"]:focus {
+     border-color: #38bdf8;
+ }
