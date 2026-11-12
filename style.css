@@ -463,7 +463,6 @@
  /* Main Container */
 
  .container {
-     margin-top: 80px;
      min-height: 78vh;
      display: flex;
      justify-content: center;
